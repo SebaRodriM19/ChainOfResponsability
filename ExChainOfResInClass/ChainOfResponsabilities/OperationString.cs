@@ -42,7 +42,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
                 stringOfValues = stringOfValues + "+" + $" {value} ";
             }
             
-            return $"{stringOfValues.Substring(0)} = {sumOfValues}";
+            return $"{stringOfValues.Substring(1)} = {sumOfValues}";
         }
 
         public static bool AreStringsANumbers(string word)

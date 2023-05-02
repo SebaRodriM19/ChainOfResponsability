@@ -24,6 +24,7 @@ var myInput5 = "-2,-4";
 
 var approverUpgrade = new SetUpChainUpgrade().GetChainUpgrade();
 var myInput6 = "1,3,4,2,5,6";
+var myInput7 = "";
 
 Console.WriteLine(approverUpgrade.ProcessString(myInput));
 Console.WriteLine();
@@ -38,3 +39,5 @@ Console.WriteLine();
 Console.WriteLine(approverUpgrade.ProcessString(myInput5));
 Console.WriteLine();
 Console.WriteLine(approverUpgrade.ProcessString(myInput6));
+Console.WriteLine();
+Console.WriteLine(approverUpgrade.ProcessString(myInput7));
