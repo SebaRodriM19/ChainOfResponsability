@@ -1,0 +1,15 @@
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/bin/Debug/net7.0/ExChainOfResInClass
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/bin/Debug/net7.0/ExChainOfResInClass.deps.json
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/bin/Debug/net7.0/ExChainOfResInClass.runtimeconfig.json
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/bin/Debug/net7.0/ExChainOfResInClass.dll
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/bin/Debug/net7.0/ExChainOfResInClass.pdb
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.csproj.AssemblyReference.cache
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.GeneratedMSBuildEditorConfig.editorconfig
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.AssemblyInfoInputs.cache
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.AssemblyInfo.cs
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.csproj.CoreCompileInputs.cache
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.dll
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/refint/ExChainOfResInClass.dll
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.pdb
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ExChainOfResInClass.genruntimeconfig.cache
+/Users/SebastianRM/Desktop/CorsoC#_.NET_GruppoEuris/DotNet_AdvancedConcepts/ChainOfResponsability/ExChainOfResInClass/obj/Debug/net7.0/ref/ExChainOfResInClass.dll
