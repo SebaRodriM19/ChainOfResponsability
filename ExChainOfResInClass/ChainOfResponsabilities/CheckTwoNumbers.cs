@@ -10,7 +10,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
         public override (bool, string) ProcessString(string numbers)
         {
 
-            if (!OperationString.CheckNumbersInString(numbers))
+            if (!OperationString.AreStringsANumbers(numbers))
             {
                 Console.WriteLine("Rejected by checker two numbers.");
             }

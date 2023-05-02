@@ -4,7 +4,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 	public static class OperationString
 	{
 
-        public static bool LengthArray(string word)
+        public static bool IsLegthArrayEqualsTwo(string word)
         {
             var values = GetArrayFromString(word);
 
@@ -18,46 +18,75 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
             }
         }
 
+        public static bool IsStringEmpty(string word)
+        {
+            if (word != string.Empty)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
         public static string SumValuesFromString(string word)
         {
+            var stringOfValues = string.Empty;
+            var sumOfValues = 0;
             var values = GetArrayFromString(word);
-            var num1 = int.Parse(values[0]);
-            var num2= int.Parse(values[1]);
 
-            return $"{num1} + {num2} = {num1 + num2}";
+            foreach (var value in values)
+            {
+                sumOfValues = sumOfValues + int.Parse(value);
+                stringOfValues = stringOfValues + "+" + $" {value} ";
+            }
+            
+            return $"{stringOfValues.Substring(0)} = {sumOfValues}";
         }
 
-        public static bool CheckNumbersInString(string word)
+        public static bool AreStringsANumbers(string word)
         {
+            var result = false;
             var values = GetArrayFromString(word);
-            var number1 = CheckNumberInString(values[0]);
-            var number2 = CheckNumberInString(values[1]);
 
-            if (number1 && number2)
+            foreach (var value in values)
             {
-                return true;
+                if (IsStringANumber(value))
+                {
+                    result = true;
+                }
+                else
+                {
+                    result = false;
+                    break;
+                }
             }
-            else
-            {
-                return false;
-            }
+
+            return result;
         }
 
-        public static bool CheckPositiveNumbers(string word)
+        public static bool AreNumbersPositive(string word)
         {
+            var result = false;
+
             var values = GetArrayFromString(word);
 
-            var num1 = CheckNumberInString(values[0]) ? int.Parse(values[0]) : 0;
-            var num2 = CheckNumberInString(values[1]) ? int.Parse(values[1]) : 0;
+            foreach (var value in values)
+            {
+                if (int.Parse(value) > 0)
+                {
+                    result = true;
 
-            if (num1 > 0 && num2 > 0)
-            {
-                return true;
+                }
+                else
+                {
+                    result = false;
+                    break;
+                }
             }
-            else
-            {
-                return false;
-            }
+
+            return result;
         }
 
         private static string[] GetArrayFromString(string word)
@@ -67,7 +96,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
             return res;
         }
 
-        private static bool CheckNumberInString(string word)
+        private static bool IsStringANumber(string word)
         {
             var result = false;
             //Case string empty

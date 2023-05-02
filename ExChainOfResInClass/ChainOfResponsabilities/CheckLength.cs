@@ -9,7 +9,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool,string) ProcessString(string numbers)
         {
-			if (!OperationString.LengthArray(numbers))
+			if (!OperationString.IsLegthArrayEqualsTwo(numbers))
 			{
 				Console.WriteLine("Rejected by checker legth.");
 			}

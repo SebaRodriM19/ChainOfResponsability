@@ -10,7 +10,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
         public override (bool, string) ProcessString(string numbers)
         {
 
-            if (!OperationString.CheckPositiveNumbers(numbers))
+            if (!OperationString.AreNumbersPositive(numbers))
             {
                 Console.WriteLine("Rejected by checker two numbers positives.");
                 return (false, $"Impossible to sum values \"{numbers}\": one those (or more) numbers are negative.");
