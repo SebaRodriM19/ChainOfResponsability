@@ -3,7 +3,7 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 {
 	public class SetUpChainUpgrade
 	{
-		private readonly StringApprover _stringApproverUpgrade;
+		private readonly StringApprover _chainApproverUpgrade;
 		public SetUpChainUpgrade()
 		{
 			var checkEmpty = new CheckEmptyString();
@@ -13,10 +13,10 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 			checkEmpty.SetChainSuccessor(checkTwoNumbersUpgrade);
 			checkTwoNumbersUpgrade.SetChainSuccessor(checkPositivesNumbersUpgrade);
 
-			_stringApproverUpgrade = checkEmpty;
+			_chainApproverUpgrade = checkEmpty;
 		}
 
-		public StringApprover GetChainUpgrade() => _stringApproverUpgrade;
+		public StringApprover GetChainUpgrade() => _chainApproverUpgrade;
 	}
 }
 

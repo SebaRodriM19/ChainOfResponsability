@@ -9,19 +9,19 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool,string) ProcessString(string numbers)
         {
-            CreateNumbersToCheck(numbers);
+            _wordsToManipulate = OperationString.GetArrayFromString(numbers);
+            var message = string.Empty;
 
             if (!IsLegthArrayEqualsTwo(_wordsToManipulate))
 			{
-				Console.WriteLine("Rejected by checker legth.");
+				message = $"Rejected by checker legth.Impossible to sum values \"{numbers}\": length of array is not 2.";
 			}
 			else if(_successorApprover != null)
 			{
-				Console.WriteLine("Approved by length checker to a top level.");
 				return _successorApprover.ProcessString(numbers);
 			}
 
-			return (false, $"Impossible to sum values \"{numbers}\": length of array is not 2.");
+			return (false, message);
 		}
 
         private bool IsLegthArrayEqualsTwo(string[] words)

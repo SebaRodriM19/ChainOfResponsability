@@ -9,24 +9,23 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool, string) ProcessString(string numbers)
         {
-            CreateNumbersToCheck(numbers);
+            var message = string.Empty;
 
-            if (!IsStringEmpty(_wordsToManipulate))
+            if (IsStringEmpty(numbers))
             {
-                Console.WriteLine("Rejected by checker emmpty string.");
+                message = $"Rejected by checker emmpty string.\nImpossible to sum values \"{numbers}\": input is an empty string.";
             }
             else if (_successorApprover != null)
             {
-                Console.WriteLine("Approved by checker empty string to a top level.");
                 return _successorApprover.ProcessString(numbers);
             }
 
-            return (false, $"Impossible to sum values \"{numbers}\": input is an empty string.");
+            return (false, message);
         }
 
-        private bool IsStringEmpty(string[] words)
+        private bool IsStringEmpty(string word)
         {
-            if (words != null)
+            if (word == string.Empty)
             {
                 return true;
             }

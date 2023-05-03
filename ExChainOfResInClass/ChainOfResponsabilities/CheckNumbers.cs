@@ -9,20 +9,19 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool, string) ProcessString(string numbers)
         {
-            CreateNumbersToCheck(numbers);
+            _wordsToManipulate = OperationString.GetArrayFromString(numbers);
+            var message = string.Empty;
 
             if (!AreStringsANumbers(_wordsToManipulate))
             {
-                Console.WriteLine("Rejected by checker two numbers.");
+                message = $"Rejected by checker numbers.\nImpossible to sum values \"{numbers}\": one of those (or more) characters are not a number.";
             }
             else if (_successorApprover != null)
             {
-                Console.WriteLine("Approved by check two numbers to a top level.");
                 return _successorApprover.ProcessString(numbers);
             }
 
-            return (false, $"Impossible to sum values \"{numbers}\": one of those (or more) characters are not a number.");
-
+            return(false, message);
         }
 
         private bool AreStringsANumbers(string[] words)

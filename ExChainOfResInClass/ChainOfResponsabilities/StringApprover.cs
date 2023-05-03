@@ -17,11 +17,6 @@ namespace ExChainOfResInClass
 			_successorApprover = stringApprover;
 		}
 
-		public void CreateNumbersToCheck(string numbers)
-		{
-			_wordsToManipulate = OperationString.GetArrayFromString(numbers);
-		}
-
 		public abstract (bool,string) ProcessString(string numbers);
 	}
 }

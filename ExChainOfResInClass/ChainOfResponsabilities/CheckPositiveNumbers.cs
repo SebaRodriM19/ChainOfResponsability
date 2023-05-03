@@ -9,17 +9,15 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool, string) ProcessString(string numbers)
         {
-            CreateNumbersToCheck(numbers);
+            _wordsToManipulate = OperationString.GetArrayFromString(numbers);
 
             if (!AreNumbersPositive(_wordsToManipulate))
             {
-                Console.WriteLine("Rejected by checker two numbers positives.");
-                return (false, $"Impossible to sum values \"{numbers}\": one those (or more) numbers are negative.");
+                return (false, $"Rejected by checker numbers positives.\nImpossible to sum values \"{numbers}\": one those (or more) numbers are negative.");
             }
             else
             {
-                Console.WriteLine("Approved by Check two numbers to a top level.");
-                return (true, $"Sum of {numbers} is : {OperationString.SumValuesFromString(numbers)}");
+                return (true, $"String was validate. Sum of {numbers} is : {OperationString.SumValuesFromString(_wordsToManipulate)}");
             }
         }
 

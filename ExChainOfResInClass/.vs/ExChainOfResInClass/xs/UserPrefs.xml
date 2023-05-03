@@ -1,18 +1,26 @@
 ﻿<Properties StartupConfiguration="{F67BF4B2-1DE9-4B32-8A5F-2FC392897DB9}|Default">
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ChainOfResponsabilities/SetUpChain.cs">
     <Files>
-      <File FileName="Program.cs" Line="4" Column="1" />
+      <File FileName="Program.cs" Line="43" Column="60" />
+      <File FileName="ChainOfResponsabilities/SetUpChain.cs" Line="21" Column="2" />
+      <File FileName="ChainOfResponsabilities/SetUpChainUpgrade.cs" Line="12" Column="1" />
+      <File FileName="StringApprover.cs" Line="26" Column="3" />
+      <File FileName="ChainOfResponsabilities/CheckEmptyString.cs" Line="12" Column="13" />
+      <File FileName="ChainOfResponsabilities/CheckTwoNumbers.cs" Line="6" Column="15" />
+      <File FileName="ChainOfResponsabilities/CheckToPositiveNumbers.cs" Line="6" Column="15" />
+      <File FileName="ChainOfResponsabilities/ExtractionNumbers.cs" Line="27" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ExChainOfResInClass" expanded="True">
             <Node name="ExChainOfResInClass" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="ChainOfResponsabilities" expanded="True">
+                <Node name="SetUpChain.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -20,6 +28,7 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.ExChainOfResInClass PreferredExecutionTarget="MonoDevelop.Default" FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.ExChainOfResInClass PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>
