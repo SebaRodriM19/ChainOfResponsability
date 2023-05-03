@@ -9,7 +9,9 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool, string) ProcessString(string numbers)
         {
-            if (!OperationString.IsStringEmpty(numbers))
+            CreateNumbersToCheck(numbers);
+
+            if (!IsStringEmpty(_wordsToManipulate))
             {
                 Console.WriteLine("Rejected by checker emmpty string.");
             }
@@ -20,6 +22,18 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
             }
 
             return (false, $"Impossible to sum values \"{numbers}\": input is an empty string.");
+        }
+
+        private bool IsStringEmpty(string[] words)
+        {
+            if (words != null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

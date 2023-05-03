@@ -9,7 +9,9 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 
         public override (bool,string) ProcessString(string numbers)
         {
-			if (!OperationString.IsLegthArrayEqualsTwo(numbers))
+            CreateNumbersToCheck(numbers);
+
+            if (!IsLegthArrayEqualsTwo(_wordsToManipulate))
 			{
 				Console.WriteLine("Rejected by checker legth.");
 			}
@@ -20,6 +22,18 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 			}
 
 			return (false, $"Impossible to sum values \"{numbers}\": length of array is not 2.");
+		}
+
+        private bool IsLegthArrayEqualsTwo(string[] words)
+        {
+            if (words.Length == 2)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

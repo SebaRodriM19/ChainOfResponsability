@@ -7,8 +7,8 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 		public SetUpChainUpgrade()
 		{
 			var checkEmpty = new CheckEmptyString();
-			var checkTwoNumbersUpgrade = new CheckTwoNumbers();
-			var checkPositivesNumbersUpgrade = new CheckTwoPositiveNumbers();
+			var checkTwoNumbersUpgrade = new CheckNumbers();
+			var checkPositivesNumbersUpgrade = new CheckPositiveNumbers();
 
 			checkEmpty.SetChainSuccessor(checkTwoNumbersUpgrade);
 			checkTwoNumbersUpgrade.SetChainSuccessor(checkPositivesNumbersUpgrade);

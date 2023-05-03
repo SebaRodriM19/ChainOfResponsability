@@ -8,8 +8,8 @@ namespace ExChainOfResInClass.ChainOfResponsabilities
 		public SetUpChain()
 		{
 			var checkLenght = new CheckLength();
-			var checkTwoNumbers = new CheckTwoNumbers();
-			var checkTwoPositiveNumbers = new CheckTwoPositiveNumbers();
+			var checkTwoNumbers = new CheckNumbers();
+			var checkTwoPositiveNumbers = new CheckPositiveNumbers();
 
 			checkLenght.SetChainSuccessor(checkTwoNumbers);
 			checkTwoNumbers.SetChainSuccessor(checkTwoPositiveNumbers);
